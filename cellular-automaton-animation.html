@@ -17,12 +17,13 @@
     left: 0;
         }
         canvas {
-            image-rendering: pixelated;
-            image-rendering: -moz-crisp-edges;
-            image-rendering: crisp-edges;
-            max-width: 90vw;
-            max-height: 90vh;
-            cursor: pointer;
+    width: 100vw;    /* 宽度占满整个视口 */
+    height: 100vh;   /* 高度占满整个视口 */
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    cursor: pointer;
+    display: block;  /* 避免canvas底下多余空白 */
         }
     </style>
 </head>
