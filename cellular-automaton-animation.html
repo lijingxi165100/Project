@@ -7,13 +7,14 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
-            background: #000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            overflow: hidden;
+    padding: 0;
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;  /* 让 body 固定覆盖整个视口 */
+    top: 0;
+    left: 0;
         }
         canvas {
             image-rendering: pixelated;
